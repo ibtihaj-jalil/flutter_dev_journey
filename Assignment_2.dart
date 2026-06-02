@@ -54,13 +54,12 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               AnimatedContainer(
                 duration: const Duration(milliseconds: 577),
-                curve: Curves.easeInOut,
-                transform: Matrix4.rotationZ(isClicked ? 0.3 : 0),
+                curve: Curves.linearToEaseOut,
                 height: 200,
                 width: 200,
                 decoration: BoxDecoration(
                   color: Colors.black,
-                  borderRadius: BorderRadius.circular(isClicked ? 100 : 20),
+                  borderRadius: BorderRadius.circular(isClicked ? 41: 100),
                 ),
               ),
               AnimatedContainer(
@@ -70,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 width: 150,
                 decoration: BoxDecoration(
                   color: Color(0xFFA8B09B),
-                  borderRadius: BorderRadius.circular(isClicked ? 50 :100),
+                  borderRadius: BorderRadius.circular(isClicked ? 41 :100),
                 ),
               ),
               GestureDetector(
@@ -88,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   width: 100,
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(isClicked ? 50 :100),
+                    borderRadius: BorderRadius.circular(isClicked ? 41 :100),
 
                   ),
                 ),
@@ -97,12 +96,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
           )
         ],
-
-
-
-
-
-      )
+        )
 
     );
   }
